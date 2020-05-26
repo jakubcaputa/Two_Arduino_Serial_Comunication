@@ -13,18 +13,10 @@ void loop() {
 if(Serial.available())  /* If data is available on serial port */
   {
     
-    //Serial.readBytes(data_str,5);
-    //Serial.println(data_str);
-    //Serial.print(char(Serial.read()));
     data_str[counter] = char(Serial.read());
     napis[counter]= data_str[counter];
-    
-    //String data_str = String(Serial.read());
-    //Serial.print("Read data");
-    //Serial.print(data_str);
-    //Serial.println(data);
     counter++;
-    
+  
     if(counter == 9)
   {
     Serial.println(napis);
@@ -51,7 +43,7 @@ if(Serial.available())  /* If data is available on serial port */
   }
   
   
-  //Serial.print(data_str);
+  
   
     
 }

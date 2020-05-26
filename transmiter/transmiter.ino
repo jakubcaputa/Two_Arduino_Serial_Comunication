@@ -38,8 +38,7 @@ void loop() {
     
     }
     
-    //char mystr[5]= "Hello";
-    //Serial.write(mystr,5);
+    
     Serial.println(data_str);
     delay(1000);
  
